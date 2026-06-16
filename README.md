@@ -26,7 +26,7 @@ Translaty Pro is designed to provide high-quality translation without disrupting
 
 Everything is packaged into a single executable file. No coding or complex setup required.
 
-### 🔗 [DOWNLOAD TRANSLATY PRO (Google Drive) 📥] https://drive.google.com/file/d/15KiJYoAJHUKDpkU67nWYhDIJu4sSTl9Z/view?usp=sharing
+### 🔗 https://github.com/HelloProds/TranslatyApp/releases/tag/v1.0.0
 
 > **⚠️ Note:** To route audio to applications like Discord or Zoom, the software requires Virtual Audio Cables. The installer will automatically check your system and install them in the background if they are missing.
 
