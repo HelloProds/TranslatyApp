@@ -34,7 +34,6 @@ Everything is packaged into a single executable file. No coding or complex setup
 1. Download the `Translaty_Setup.exe` file from the link above.
 2. Run the installer and follow the on-screen instructions.
 3. Open the application from your desktop shortcut.
-4. On the first launch, enter your **OpenAI API Key** in the settings tab *(the program requires your own key to function)*.
 
 ---
 
