@@ -7,7 +7,7 @@
 [![AI Engine](https://img.shields.io/badge/AI_Engine-OpenAI_GPT--4o-412991?style=for-the-badge&logo=openai)](https://openai.com)
 [![Status](https://img.shields.io/badge/Status-Ready_to_use-2EA043?style=for-the-badge)]()
 
-**Break the language barrier.** Translaty Pro is a desktop application that translates your voice and your conversation partners' voices instantly during calls. It works directly at the operating system level, making it compatible with **any** communication platform: Discord, Zoom, Microsoft Teams, Skype, and TeamSpeak.
+**Break the language barrier.** Translaty Pro is a desktop application that translates your voice and your conversation partners' voices instantly during calls. It works directly at the operating system level, making it compatible with **any** communication platform: Discord, Zoom, Microsoft Teams, Meets, TeamSpeak, and more.
 
 
 ---
