@@ -22,7 +22,7 @@ import json
 
 warnings.filterwarnings("ignore")
 
-# --- ЩИТ СРЕЩУ ТИХИ КРАШОВЕ В .EXE (--noconsole) ---
+# --- (--noconsole) ---
 class NullWriter:
     def write(self, text): pass
     def flush(self): pass
@@ -37,10 +37,10 @@ def global_exception_handler(exc_type, exc_value, exc_tb):
 sys.excepthook = global_exception_handler
 # ----------------------------------------------------
 
-# ⚠️ СЛОЖИ СИ НОВИЯ КЛЮЧ ТУК ⚠️
+# ⚠️ СЛОЖИ СИ КЛЮЧА ТУК ⚠️
 OPENAI_API_KEY = "your openai api key here"
 
-# --- ФИНА НАСТРОЙКА ---
+# --- НАСТРОЙКА ---
 TARGET_SAMPLE_RATE = 48000
 SILENCE_THRESHOLD = 0.05
 SILENCE_DURATION = 1.7
