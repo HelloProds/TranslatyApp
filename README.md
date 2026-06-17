@@ -74,21 +74,24 @@ git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
 `
 
-**2. Install requirements & PyInstaller**
+**2. Enter your OpenAI API key**
+Replace the text in config.py and main.py with your OpenAI API key.
+
+**3. Install requirements & PyInstaller**
 Ensure you have Python installed, then install the required libraries along with the compilation tool:
 ` bash
 pip install -r requirements.txt
 pip install pyinstaller
 `
 
-**3. Compile the code**
+**4. Compile the code**
 Since the project relies on a modular architecture, you only need to point PyInstaller to the `main.py` entry file. It will automatically link `config.py` and `audio_logic.py`. Run the following command in your terminal:
 `bash
 pyinstaller --noconsole --onefile main.py
 `
 *(The `--noconsole` flag ensures the app runs purely via the GUI without a background terminal, and `--onefile` packages everything into a single executable).*
 
-**4. Run your build**
+**5. Run your build**
 Once the process finishes successfully, your compiled executable will be located inside the newly generated `dist/` folder. You can rename `main.exe` to `TranslatyPro.exe` and run it directly.
 
 <div align="center">
