@@ -69,26 +69,23 @@ To enable real-time translation, you need to tell Windows where to route the aud
 If you wish to modify the source code and compile your own standalone `.exe` without using the pre-built installer, follow these steps:
 
 **1. Clone the repository**
-` ` `
-bash
+`bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
-` ` `
+`
 
 **2. Install requirements & PyInstaller**
 Ensure you have Python installed, then install the required libraries along with the compilation tool:
-` ` `
-bash
+` bash
 pip install -r requirements.txt
 pip install pyinstaller
-` ` `
+`
 
 **3. Compile the code**
 Since the project relies on a modular architecture, you only need to point PyInstaller to the `main.py` entry file. It will automatically link `config.py` and `audio_logic.py`. Run the following command in your terminal:
-` ` `
-bash
+`bash
 pyinstaller --noconsole --onefile main.py
-` ` `
+`
 *(The `--noconsole` flag ensures the app runs purely via the GUI without a background terminal, and `--onefile` packages everything into a single executable).*
 
 **4. Run your build**
