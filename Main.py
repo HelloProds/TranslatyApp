@@ -22,7 +22,7 @@ import json
 
 warnings.filterwarnings("ignore")
 
-# --- (--noconsole) ---
+# --- ЩИТ СРЕЩУ ТИХИ КРАШОВЕ В .EXE (--noconsole) ---
 class NullWriter:
     def write(self, text): pass
     def flush(self): pass
@@ -37,10 +37,10 @@ def global_exception_handler(exc_type, exc_value, exc_tb):
 sys.excepthook = global_exception_handler
 # ----------------------------------------------------
 
-# ⚠️ СЛОЖИ СИ КЛЮЧА ТУК ⚠️
-OPENAI_API_KEY = "your openai api key here"
+# ⚠️ 1СЛОЖИ СИ НОВИЯ КЛЮЧ ТУК ⚠️
+OPENAI_API_KEY = "your openai api key"
 
-# --- НАСТРОЙКА ---
+# --- ФИНА НАСТРОЙКА ---
 TARGET_SAMPLE_RATE = 48000
 SILENCE_THRESHOLD = 0.05
 SILENCE_DURATION = 1.7
@@ -283,12 +283,13 @@ class AudioPipeline:
                     gpt = self.app.client.chat.completions.create(
                         model="gpt-4o",
                         messages=[
-                            {"role": "system", "content": f"Translate to {self.trg_code}. Output ONLY the translation. Follow these rules: {AI_INSTRUCTIONS}"},
+                            {"role": "system", "content": f"Translate to {self.trg_code}. Output ONLY the translation. "
+                                                          f"Follow these rules: {AI_INSTRUCTIONS}"},
                             {"role": "user", "content": text}
                         ]
                     )
                     translated = gpt.choices[0].message.content
-                    self.app.log(f"📝 {translated}")
+                    self.app.log(f"📝 {translated}")x
                 except Exception: continue
 
                 try:
