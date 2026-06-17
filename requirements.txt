@@ -1,0 +1,9 @@
+customtkinter
+sounddevice
+numpy
+soundfile
+openai
+scipy
+pystray
+Pillow
+darkdetect
